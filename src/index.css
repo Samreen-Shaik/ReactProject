@@ -1,0 +1,235 @@
+/* 🌍 Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* ✅ Centering the App Interface */
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+/* ✅ Mobile App Box */
+.form-container {
+  width: 100%;
+  max-width: 375px;
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+/* ✅ Headings */
+h2 {
+  font-size: 22px;
+  margin-bottom: 18px;
+  color: #333;
+}
+
+/* ✅ Input Fields */
+input {
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  transition: border 0.3s ease-in-out;
+}
+
+input:focus {
+  border-color: #6c63ff;
+  box-shadow: 0 0 6px rgba(108, 99, 255, 0.5);
+}
+
+/* ✅ Buttons */
+button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 12px;
+  border: none;
+  border-radius: 6px;
+  background: #6c63ff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+button:hover {
+  background: #5548c8;
+  transform: scale(1.02);
+}
+
+button:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+/* ✅ Error Box */
+.error-box {
+  background-color: #ffebeb;
+  color: #d9534f;
+  padding: 10px;
+  border: 1px solid #d9534f;
+  border-radius: 6px;
+  margin-top: 8px;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* ✅ Links for Navigation */
+a {
+  display: block;
+  margin-top: 12px;
+  color: #6c63ff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #5548c8;
+}
+
+/* ✅ Dashboard Container */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  padding: 20px;
+}
+
+/* ✅ Welcome Message */
+.dashboard-container h1 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+/* ✅ Subtext */
+.dashboard-subtext {
+  font-size: 16px;
+  color: #666;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+/* ✅ Buttons for Navigation */
+.dashboard-btn,
+.logout-btn {
+  width: 90%;
+  max-width: 300px;
+  padding: 14px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* 🔵 Account Settings Button */
+.dashboard-btn {
+  background: #6c63ff;
+  color: white;
+  font-weight: bold;
+}
+
+.dashboard-btn:hover {
+  background: #5548c8;
+}
+
+/* 🔴 Logout Button */
+.logout-btn {
+  background: #ff4d4d;
+  color: white;
+  font-weight: bold;
+}
+
+.logout-btn:hover {
+  background: #d9534f;
+}
+
+/* ✅ Account Settings Page */
+.settings-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  padding: 20px;
+}
+
+.settings-container h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.settings-container p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.settings-container button {
+  width: 80%;
+  max-width: 280px;
+}
+
+/* ✅ Navigation Link Back */
+.back-link {
+  margin-top: 12px;
+  font-size: 16px;
+  color: #6c63ff;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+  color: #5548c8;
+}
+
+/* 📱 Mobile Optimization */
+@media (max-width: 480px) {
+  .form-container {
+    max-width: 90%;
+    padding: 18px;
+  }
+
+  .dashboard-container,
+  .settings-container {
+    padding: 15px;
+  }
+}
+/* Fix input field width */
+input {
+  width: calc(100% - 28px); /* Adjust based on padding */
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  transition: border 0.3s ease-in-out;
+  box-sizing: border-box; /* Ensures width includes padding */
+}
